@@ -12,11 +12,9 @@ public class RaceCar {
 	public boolean damaged = false;
 	
 	/**
-	 * 
-	 * @param brand Brand of race car
-	 * @param positionInRace Position of race car in the race
+	 * @param positionInRace 
 	 */
-	public RaceCar(String brand, int positionInRace) {
+	public RaceCar(int positionInRace) {
 		System.out.println("Your " +brand +" race car has been created.");
 		if (positionInRace <= 0)
 			throw new IllegalArgumentException("The car's position cannot be negative.");
@@ -27,6 +25,10 @@ public class RaceCar {
 		this.positionInRace = positionInRace;
 	}
 	
+	public RaceCar(String string, int i) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getPositionInRace() {
 		return this.positionInRace;
 	}

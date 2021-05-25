@@ -2,20 +2,28 @@ package _01_race_car;
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
- */
+ */ 
 
 
 
 public class RaceCarRunner {
-	private static final String Racecar = null;
 
 	public static void main(String[] args) {
 		/* Do the following things without changing the RaceCar class */
-		
+        RaceCar frostbite = new RaceCar("Chevy",5);
+				frostbite.getPositionInRace();
+				System.out.println("The car is in" +frostbite.getPositionInRace()+"th place");
+				frostbite.crash();
+				if(frostbite.damaged) {
+					frostbite.pit();
+					
+				}
+				for(int i = 0; i<7; i++);
+				frostbite.overtake();
+					
 		// 1. Create a RaceCar and place it in 5th position
 	 
 		// 2. Print the RaceCar's position in the race
-
 		// 3. Crash the RaceCar
 		
 		// 4. If the car is damaged. Bring it in for a pit stop.
